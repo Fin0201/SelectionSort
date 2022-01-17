@@ -7,14 +7,13 @@ namespace ConsoleApp5
         static void Main(string[] args)
         {
             //Selection sort
-            int[] numberArray = { 7, 34, 16, 2, 37, 16, 10, 67, 43, 29, 12, 1, 5, 91 }; //The array going to be sorted
-            int oldLocation = 0;
-            int lowestValue;
+            int[] numberArray = { 7, 34, 16, 91, 37, 16, 10, 67, 7, 12, 12, 1, 5, 91 }; //The array going to be sorted
 
 
             for (int i = numberArray.Length - 1; i >= 0; i--) //Runs through the array in reverse. i will be used to keep track of where the lowest value will be moved to.
             {
-                lowestValue = numberArray[i]; //Sets lowestValue to i, making sure the program doesnt swap any values that have already been sorted.
+                int lowestValue = numberArray[i]; //Sets lowestValue to i, making sure the program doesnt swap any values that have already been sorted.
+                int oldLocation = i;
 
                 for (int j = i; j >= 0; j--) //Loops through the array, starting at i.
                 {
