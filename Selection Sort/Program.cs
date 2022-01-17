@@ -48,7 +48,7 @@ namespace ConsoleApp5
                 if (numberArray[i] != dupeCheck) //Checks if the current value is the same as the previous value.
                 {
                     tempArray[counter] = numberArray[i]; //Adds the value to a temporary array at the position of a counter.
-                    counter++; //Increments te counter by 1
+                    counter++; //Increments the counter by 1
                 }
                 dupeCheck = numberArray[i]; //Gets the previous value in the array.
 
